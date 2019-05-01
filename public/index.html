@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>JB-Proxy</title>
-</head>
-<body>
-  <div id="App"></div>
-  <div id="Author"></div>
-  <div id="reviews"></div>
-  <script src="http://localhost:3002/bundle.js"></script>
-  <script src="http://localhost:3003/bundle.js"></script>
-  <script src="http://localhost:3004/dist/bundle.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
   <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-  <script>
-      ReactDOM.render(
-        React.createElement(App),
-        document.getElementById('App')
-      );
-      ReactDOM.render(
-        React.createElement(AuthorInfo),
-        document.getElementById('Author')
-      );
-      ReactDOM.render(
-        React.createElement(Reviews),
-        document.getElementById('reviews')
-      );
-    </script>
+  <script src="https://unpkg.com/styled-components/dist/styled-components.min.js"></script>
+  <title>JB-Proxy</title>
+</head>
+
+<body>
+  <div id="description-app"></div>
+  <div id="root"></div>
+  <div id="reviews"></div>
+  <!-- <script src="http://proxy-env.z2pavysda6.us-west-2.elasticbeanstalk.com/12"></script> -->
+
+  <script src="http://52.13.118.173/bundle.js"></script>
+  <script src="http://bookdescriptionservice-env.gp7avcyjnp.us-east-2.elasticbeanstalk.com/dist/bundle.js"></script>
 </body>
+
 </html>
